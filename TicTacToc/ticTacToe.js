@@ -321,7 +321,7 @@ function check_if_win()
 			counter++;
 	}
 	if(counter == 9){
-		alert(`No one's win!!`);
+		setTimeout(() => { alert(`No one's win!!`); }, 10);
 		flag = 3;
 	}
 
