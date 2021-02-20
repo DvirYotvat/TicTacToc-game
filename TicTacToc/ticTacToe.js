@@ -315,14 +315,18 @@ function check_if_win()
 	}
 
 	// check if no one wins
-	for(let i = 0; i < 9; i++)
+	else
 	{
-		if(clicked1_arr[i] == 1 || clicked2_arr[i] == 1)
-			counter++;
-	}
-	if(counter == 9){
-		setTimeout(() => { alert(`No one's win!!`); }, 10);
-		flag = 3;
+		for(let i = 0; i < 9; i++)
+		{
+			if(clicked1_arr[i] == 1 || clicked2_arr[i] == 1)
+				counter++;
+		}
+		if(counter == 9){
+			setTimeout(() => { alert(`No one's win!!`); }, 10);
+		
+			flag = 3;
+		}
 	}
 
 	// update the score of the players 
